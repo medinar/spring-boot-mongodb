@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3f5f9eb-ce8c-4732-9009-3ba441db1496" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/medinar/practice/springbootmongodb/student/exception/NotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/medinar/practice/springbootmongodb/BadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medinar/practice/springbootmongodb/student/exception/BadRequestException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/medinar/practice/springbootmongodb/student/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medinar/practice/springbootmongodb/student/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/medinar/practice/springbootmongodb/student/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medinar/practice/springbootmongodb/student/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +57,14 @@
       <recent name="com.medinar.practice.springbootmongodb.student.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests#4">
+  <component name="RunManager" selected="HTTP Request.generated-requests#8">
     <configuration name="generated-requests#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests#8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="8" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="SpringBootMongodbApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
@@ -89,12 +88,14 @@
       <item itemvalue="Spring Boot.SpringBootMongodbApplication" />
       <item itemvalue="HTTP Request.generated-requests#4" />
       <item itemvalue="HTTP Request.generated-requests#6" />
+      <item itemvalue="HTTP Request.generated-requests#8" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests#8" />
+        <item itemvalue="Spring Boot.SpringBootMongodbApplication" />
         <item itemvalue="HTTP Request.generated-requests#4" />
         <item itemvalue="HTTP Request.generated-requests#6" />
-        <item itemvalue="Spring Boot.SpringBootMongodbApplication" />
         <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -107,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636841863905</updated>
-      <workItem from="1636841868447" duration="19583000" />
+      <workItem from="1636841868447" duration="31626000" />
     </task>
     <servers />
   </component>
@@ -124,5 +125,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="_student.setFirstName(student.getFirstName())" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

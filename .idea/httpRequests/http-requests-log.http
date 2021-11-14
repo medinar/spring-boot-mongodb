@@ -1,3 +1,471 @@
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "firstName": "Maria-updated",
+   "lastName": "Dela Cruz",
+   "email": "maria.delacruz-updated@medinar.com",
+   "gender": "FEMALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 15,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "firstName": "Maria-updated",
+   "lastName": "Dela Cruz",
+   "email": "maria.delacruz-updated@medinar.com",
+   "gender": "FEMALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 15,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "firstName": "Maria-updated",
+   "lastName": "Dela Cruz",
+   "email": "maria.delacruz-updated@medinar.com",
+   "gender": "FEMALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 15,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "firstName": "Maria-updated",
+   "lastName": "Dela Cruz",
+   "email": "maria.delacruz-updated@medinar.com",
+   "gender": "FEMALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 15,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "firstName": "Maria-updated",
+   "lastName": "Dela Cruz",
+   "email": "maria.delacruz-updated@medinar.com",
+   "gender": "FEMALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 15,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "firstName": "Maria",
+   "lastName": "Dela Cruz",
+   "email": "maria.delacruz@medinar.com",
+   "gender": "FEMALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 15,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "id": "6190e7c50e8f96294479bfa2",
+   "firstName": "Juan-updated",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "id": "6190e7c50e8f96294479bfa2",
+   "firstName": "Juan1",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "id": "6190e7c50e8f96294479bfa2",
+   "firstName": "Juan1",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "id": "6190e7c50e8f96294479bfa2",
+   "firstName": "Juan1",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "id": "6190e7c50e8f96294479bfa2",
+   "firstName": "Juan1",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "id": "6190e7c50e8f96294479bfa2",
+   "firstName": "Juan1",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+<> 2021-11-14T112856.500.json
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "id": "6190e7c50e8f96294479bfa2",
+   "firstName": "Juan1",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "id": "6190e7c50e8f96294479bfa2",
+   "firstName": "Juan1",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "id": "6190e7c50e8f96294479bfa2",
+   "firstName": "Juan1",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students
+Content-Type: application/json
+
+{
+   "id": "6190e7c50e8f96294479bfa2",
+   "firstName": "Juan1",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+<> 2021-11-14T111612.405.json
+
+###
+
+PUT http://localhost:8080/api/v1/students
+Content-Type: application/json
+
+{
+   "id": "6190e7c50e8f96294479bfa2",
+   "firstName": "Juan1",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students
+Content-Type: application/json
+
+{
+   "id": "6190e7c50e8f96294479bfa2",
+   "firstName": "Juan1",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-updated@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+POST http://localhost:8080/api/v1/students
+Content-Type: application/json
+
+{
+   "firstName": "Juan",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students
+Content-Type: application/json
+
+{
+   "firstName": "Juan1",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-updated@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+<> 2021-11-14T024015.500.json
+
+###
+
 DELETE http://localhost:8080/api/v1/students/6190da1118243d7111ecdbce
 
 ###
