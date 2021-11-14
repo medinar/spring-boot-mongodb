@@ -4,4 +4,5 @@ com/medinar/practice/springbootmongodb/student/StudentController.class
 com/medinar/practice/springbootmongodb/student/StudentRepository.class
 com/medinar/practice/springbootmongodb/student/Gender.class
 com/medinar/practice/springbootmongodb/student/Student.class
+com/medinar/practice/springbootmongodb/BadRequestException.class
 com/medinar/practice/springbootmongodb/student/Address.class

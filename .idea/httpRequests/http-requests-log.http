@@ -1,0 +1,51 @@
+POST http://localhost:8080/api/v1/students
+Content-Type: application/json
+
+{
+   "firstName": "Juan",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+POST http://localhost:8080/api/v1/students
+
+Content-Type: application/json
+
+[
+ {
+   firstName: "Juan",
+   lastName: "Dela Cruz",
+   email: "juan.delacruz-1@medinar.com",
+   gender: "MALE",
+   address: {
+     country: "Makati City",
+     city: "Philippines",
+     postCode: "1200"
+   },
+   favouriteSubjects: [
+      "Computer Science",
+      "English"
+   ],
+   totalSpentInBooks: 10,
+   created: "2021-11-13T22:09:22.249"
+ }
+]
+
+<> 2021-11-14T012141.415.json
+
+###
+
