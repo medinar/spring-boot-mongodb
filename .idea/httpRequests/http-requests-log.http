@@ -1,3 +1,76 @@
+DELETE http://localhost:8080/api/v1/students/6190da1118243d7111ecdbce
+
+###
+
+POST http://localhost:8080/api/v1/students
+Content-Type: application/json
+
+{
+   "firstName": "Juan",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-1@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+DELETE http://localhost:8080/api/v1/students/6190d5c686c2cc049e66dc8e
+
+<> 2021-11-14T014152.404.json
+
+###
+
+DELETE http://localhost:8080/api/v1/students/6190d5c686c2cc049e66dc8e
+
+<> 2021-11-14T014107.404.json
+
+###
+
+DELETE http://localhost:8080/api/v1/students/6190d5c686c2cc049e66dc8e
+
+<> 2021-11-14T014027.404.json
+
+###
+
+DELETE http://localhost:8080/api/v1/students/6190d5c686c2cc049e66dc8e
+
+<> 2021-11-14T014017.404.json
+
+###
+
+DELETE http://localhost:8080/api/v1/students/6190d5c686c2cc049e66dc8e
+
+<> 2021-11-14T013725.404.json
+
+###
+
+DELETE http://localhost:8080/api/v1/students/6190d5c686c2cc049e66dc8e
+
+###
+
+DELETE http://localhost:8080/api/v1/students/6190d5c686c2cc049e66dc8e
+
+<> 2021-11-14T013502.404.json
+
+###
+
+DELETE http://localhost:8080/api/v1/students/6190d5c686c2cc049e66dc8e
+
+<> 2021-11-14T013435.404.json
+
+###
+
 POST http://localhost:8080/api/v1/students
 Content-Type: application/json
 

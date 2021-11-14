@@ -1,8 +1,9 @@
 com/medinar/practice/springbootmongodb/SpringBootMongodbApplication.class
 com/medinar/practice/springbootmongodb/student/StudentService.class
 com/medinar/practice/springbootmongodb/student/StudentController.class
+com/medinar/practice/springbootmongodb/student/exception/BadRequestException.class
 com/medinar/practice/springbootmongodb/student/StudentRepository.class
 com/medinar/practice/springbootmongodb/student/Gender.class
 com/medinar/practice/springbootmongodb/student/Student.class
-com/medinar/practice/springbootmongodb/BadRequestException.class
+com/medinar/practice/springbootmongodb/student/exception/NotFoundException.class
 com/medinar/practice/springbootmongodb/student/Address.class

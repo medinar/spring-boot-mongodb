@@ -1,6 +1,6 @@
 package com.medinar.practice.springbootmongodb.student;
 
-import com.medinar.practice.springbootmongodb.BadRequestException;
+import com.medinar.practice.springbootmongodb.student.exception.BadRequestException;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,4 +22,10 @@ public class StudentController {
     public void addStudent(@RequestBody Student student) throws BadRequestException {
         studentService.addStudent(student);
     }
+
+    @DeleteMapping("/{studentId}")
+    public void deleteStudent(@PathVariable String studentId) {
+        studentService.deleteStudent(studentId);
+    }
+
 }

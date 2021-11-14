@@ -1,4 +1,4 @@
-package com.medinar.practice.springbootmongodb;
+package com.medinar.practice.springbootmongodb.student.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

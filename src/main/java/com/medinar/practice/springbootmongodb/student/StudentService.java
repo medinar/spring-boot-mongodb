@@ -1,6 +1,7 @@
 package com.medinar.practice.springbootmongodb.student;
 
-import com.medinar.practice.springbootmongodb.BadRequestException;
+import com.medinar.practice.springbootmongodb.student.exception.BadRequestException;
+import com.medinar.practice.springbootmongodb.student.exception.NotFoundException;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -25,5 +26,15 @@ public class StudentService {
             ));
         }
         studentRepository.insert(student);
+    }
+
+    public void deleteStudent(String studentId) {
+        if (!studentRepository.existsById(studentId)) {
+            throw new NotFoundException(String.format(
+                    "Student with id %s does not exists",
+                    studentId
+            ));
+        }
+        studentRepository.deleteById(studentId);
     }
 }

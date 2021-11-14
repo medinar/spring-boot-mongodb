@@ -1,1 +1,9 @@
+/Users/rommelmedina/git/practice/spring-boot-mongodb/src/main/java/com/medinar/practice/springbootmongodb/student/Address.java
+/Users/rommelmedina/git/practice/spring-boot-mongodb/src/main/java/com/medinar/practice/springbootmongodb/student/exception/BadRequestException.java
+/Users/rommelmedina/git/practice/spring-boot-mongodb/src/main/java/com/medinar/practice/springbootmongodb/student/StudentService.java
+/Users/rommelmedina/git/practice/spring-boot-mongodb/src/main/java/com/medinar/practice/springbootmongodb/student/StudentRepository.java
+/Users/rommelmedina/git/practice/spring-boot-mongodb/src/main/java/com/medinar/practice/springbootmongodb/student/StudentController.java
+/Users/rommelmedina/git/practice/spring-boot-mongodb/src/main/java/com/medinar/practice/springbootmongodb/student/Student.java
+/Users/rommelmedina/git/practice/spring-boot-mongodb/src/main/java/com/medinar/practice/springbootmongodb/student/exception/NotFoundException.java
 /Users/rommelmedina/git/practice/spring-boot-mongodb/src/main/java/com/medinar/practice/springbootmongodb/SpringBootMongodbApplication.java
+/Users/rommelmedina/git/practice/spring-boot-mongodb/src/main/java/com/medinar/practice/springbootmongodb/student/Gender.java
