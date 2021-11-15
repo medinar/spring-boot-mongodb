@@ -1,0 +1,18 @@
+{
+  "id": "6191a40915932e436a0646ba",
+  "firstName": "Juan2",
+  "lastName": "Dela Cruz",
+  "email": "juan.delacruz-2@medinar.com",
+  "gender": "MALE",
+  "address": {
+    "country": "Makati City",
+    "city": "Philippines",
+    "postCode": "1200"
+  },
+  "favouriteSubjects": [
+    "Computer Science",
+    "English"
+  ],
+  "totalSpentInBooks": 10,
+  "created": "2021-11-13T22:09:22.249"
+}

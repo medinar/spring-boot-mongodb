@@ -2,6 +2,124 @@ PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
 Content-Type: application/json
 
 {
+   "firstName": "Maria-updated-",
+   "lastName": "Dela Cruz",
+   "email": "maria.delacruz-updated-@medinar.com",
+   "gender": "FEMALE",
+   "address": {
+     "country": "Makati City-",
+     "city": "Philippines-",
+     "postCode": "1200-"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 15,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+<> 2021-11-14T163523.200.json
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "firstName": "Maria-updated-",
+   "lastName": "Dela Cruz",
+   "email": "maria.delacruz-updated-@medinar.com",
+   "gender": "FEMALE",
+   "address": {
+     "country": "Makati City-",
+     "city": "Philippines-",
+     "postCode": "1200-"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 15,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+<> 2021-11-14T162159.200.json
+
+###
+
+POST http://localhost:8080/api/v1/students
+Content-Type: application/json
+
+{
+   "firstName": "Juan2",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-2@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+POST http://localhost:8080/api/v1/students
+Content-Type: application/json
+
+{
+   "firstName": "Juan2",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-2@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+<> 2021-11-14T160425.201.json
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "firstName": "Maria-updated",
+   "lastName": "Dela Cruz",
+   "email": "maria.delacruz-updated@medinar.com",
+   "gender": "FEMALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 15,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
    "firstName": "Maria-updated",
    "lastName": "Dela Cruz",
    "email": "maria.delacruz-updated@medinar.com",

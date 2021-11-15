@@ -18,7 +18,7 @@ public class StudentService {
         return studentRepository.findAll();
     }
 
-    public void addStudent(Student student) throws BadRequestException {
+    public Student addStudent(Student student) throws BadRequestException {
         Boolean emailExists = studentRepository.existsByEmail(student.getEmail());
         if (emailExists) {
             throw new BadRequestException(String.format(
@@ -26,10 +26,10 @@ public class StudentService {
                     student.getEmail()
             ));
         }
-        studentRepository.insert(student);
+        return studentRepository.insert(student);
     }
 
-    public void deleteStudent(String studentId) {
+    public void deleteStudent(String studentId) throws NotFoundException {
         if (!studentRepository.existsById(studentId)) {
             throw new NotFoundException(String.format(
                     "Student with id %s does not exists",
@@ -39,7 +39,7 @@ public class StudentService {
         studentRepository.deleteById(studentId);
     }
 
-    public void updateStudent(Student student, String studentId) {
+    public Student updateStudent(Student student, String studentId) throws IllegalStateException {
         Student _student = studentRepository.findById(studentId)
                 .orElseThrow(() -> new IllegalStateException(
                         String.format("student with id %s does not exists", studentId)
@@ -76,6 +76,27 @@ public class StudentService {
             _student.setGender(student.getGender());
         }
 
+        if (student.getAddress() != null && student.getAddress().getCountry() != null &&
+                student.getAddress().getCountry().length() > 0 &&
+                !Objects.equals(_student.getAddress().getCountry(), student.getAddress().getCountry())
+        ) {
+            _student.getAddress().setCountry(student.getAddress().getCountry());
+        }
+
+        if (student.getAddress() != null && student.getAddress().getCity() != null &&
+                student.getAddress().getCity().length() > 0 &&
+                !Objects.equals(_student.getAddress().getCity(), student.getAddress().getCity())
+        ) {
+            _student.getAddress().setCity(student.getAddress().getCity());
+        }
+
+        if (student.getAddress() != null && student.getAddress().getPostCode() != null &&
+                student.getAddress().getPostCode().length() > 0 &&
+                !Objects.equals(_student.getAddress().getPostCode(), student.getAddress().getPostCode())
+        ) {
+            _student.getAddress().setPostCode(student.getAddress().getPostCode());
+        }
+
         if (student.getFavouriteSubjects() != null && !student.getFavouriteSubjects().isEmpty()) {
             _student.setFavouriteSubjects(student.getFavouriteSubjects());
         }
@@ -91,6 +112,6 @@ public class StudentService {
         ) {
             _student.setCreated(student.getCreated());
         }
-        studentRepository.save(_student);
+        return studentRepository.save(_student);
     }
 }
