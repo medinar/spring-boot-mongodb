@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3f5f9eb-ce8c-4732-9009-3ba441db1496" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/medinar/practice/springbootmongodb/SpringBootMongodbApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medinar/practice/springbootmongodb/SpringBootMongodbApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/medinar/practice/springbootmongodb/student/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medinar/practice/springbootmongodb/student/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/medinar/practice/springbootmongodb/student/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medinar/practice/springbootmongodb/student/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +114,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636841863905</updated>
-      <workItem from="1636841868447" duration="37243000" />
+      <workItem from="1636841868447" duration="37792000" />
     </task>
     <servers />
   </component>

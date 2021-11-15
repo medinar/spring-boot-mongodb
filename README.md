@@ -631,5 +631,64 @@ public class StudentService {
 
 ```
 
+### Intellij Generated Requests for Testing
+
+generated-requests.http
+
+```
+###
+POST http://localhost:8080/api/v1/students
+Content-Type: application/json
+
+{
+   "firstName": "Juan",
+   "lastName": "Dela Cruz",
+   "email": "juan.delacruz-2@medinar.com",
+   "gender": "MALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science",
+      "English"
+   ],
+   "totalSpentInBooks": 10,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+###
+DELETE http://localhost:8080/api/v1/students/{{studentId}}
+
+###
+DELETE http://localhost:8080/api/v1/students/6190da1118243d7111ecdbce
+
+###
+PUT http://localhost:8080/api/v1/students/{{studentId}}
+
+###
+PUT http://localhost:8080/api/v1/students/6190e7c50e8f96294479bfa2
+Content-Type: application/json
+
+{
+   "firstName": "Maria",
+   "lastName": "Dela Cruz",
+   "email": "maria.delacruz@medinar.com",
+   "gender": "FEMALE",
+   "address": {
+     "country": "Makati City",
+     "city": "Philippines",
+     "postCode": "1200"
+   },
+   "favouriteSubjects": [
+      "Computer Science"
+   ],
+   "totalSpentInBooks": 15,
+   "created": "2021-11-13T22:09:22.249"
+}
+
+```
+
  
 
