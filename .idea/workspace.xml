@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3f5f9eb-ce8c-4732-9009-3ba441db1496" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mongodb.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,10 +93,10 @@
     </configuration>
     <list>
       <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
-      <item itemvalue="Spring Boot.SpringBootMongodbApplication" />
       <item itemvalue="HTTP Request.generated-requests#4" />
       <item itemvalue="HTTP Request.generated-requests#6" />
       <item itemvalue="HTTP Request.generated-requests#8" />
+      <item itemvalue="Spring Boot.SpringBootMongodbApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -114,7 +116,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636841863905</updated>
-      <workItem from="1636841868447" duration="37792000" />
+      <workItem from="1636841868447" duration="39014000" />
+      <workItem from="1637101624032" duration="1621000" />
     </task>
     <servers />
   </component>
@@ -131,6 +134,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

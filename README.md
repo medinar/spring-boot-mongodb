@@ -1,11 +1,111 @@
-# Spring Boot MongoDB
+# Spring Boot MongoDB CRUD Application
 
-## This project is about learning Spring Boot using MongoDB as database
+
+
+## Overview
+
+This project is about building a **Spring Boot REST API** using **Spring Data** and **MongoDB** to make CRUD operations to a MongoDB database that is a **Docker** image.
+
+### Application Architecture Diagram
+
+![Application-Architecture-Diagram](https://user-images.githubusercontent.com/25921121/141672227-2069aa84-0156-4590-aa77-4d1bd7ad5364.png)
+
+### Built With
+
+- Java 17
+- Spring Boot 2.5.6
+  - Spring Web
+  - Spring Data MongoDB
+
+### Project Structure
+
+![Project Structure](https://user-images.githubusercontent.com/25921121/142077163-29d816ac-5dd3-4671-896b-51cf2d424066.png)
+
+- `Student` data model class corresponds to the entity and the table student
+- `StudentRepository` is an interface that extends `MongoRepository` interface for CRUD operations and it is where we define custom methods
+- `StudentController` is where all the CRUD endpoints are defined
+- `application.properties` is where we configure application parameters such as the connection to our MongoDB database
+- `pom.xml` contains the configuration of the required dependencies of the applicaition
+
+## Getting Started
+
+### Setup Spring Boot project
+
+Use [Spring web tool](https://start.spring.io/) or your development tool ([Spring Tool Suite](https://spring.io/tools), Eclipse, [Intellij](https://www.jetbrains.com/idea/download/)) to create a Spring Boot project.
+
+Generate the project with the following dependencies:
+
+- Spring Web
+- Spring Data MongoDB
+- Lombok
+
+Or by manually adding this dependencies in our `pom.xml`
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.6</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.medinar.practice</groupId>
+    <artifactId>spring-boot-mongodb</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>spring-boot-mongodb</name>
+    <description>spring-boot-mongodb</description>
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
+```
 
 ### Configuring MongoDB and MongoExpress
 
 To run a docker image from a container:
-- Download Docker Desktop for their site:
+- Download Docker Desktop from their site:
 
 [Get Started with Docker](https://www.docker.com/get-started)
 
@@ -57,7 +157,7 @@ spring-boot-mongodb git/main*
 
 ### Connecting to the database
 
-- Add the following configurations inside application.properties:
+- Add the following configurations inside the `application.properties`:
 ```properties
 spring.data.mongodb.authentication-database=admin
 spring.data.mongodb.username=rootuser
@@ -71,7 +171,8 @@ spring.data.mongodb.host=localhost
 
 ### Creating the Model
 
-Address.java
+`Address.java`
+
 ```java
 package com.medinar.practice.springbootmongodb.student;
 
@@ -85,7 +186,8 @@ public class Address {
 }
 ```
 
-Gender.java
+`Gender.java`
+
 ```java
 package com.medinar.practice.springbootmongodb.student;
 
@@ -94,14 +196,15 @@ public enum Gender {
 }
 ```
 
-Student.java
+`Student.java`
+
 ```java
 package com.medinar.practice.springbootmongodb.student;
 
 import lombok.Data;
 
 import java.math.BigDecimal;
-import java.time.ZonedDateTime;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -113,7 +216,7 @@ public class Student {
     private Address address;
     private List<String> favouriteSubjects;
     private BigDecimal totalSpentInBooks;
-    private ZonedDateTime created;
+    private LocalDateTime created;
 }
 ```
 
@@ -128,7 +231,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
-import java.time.ZonedDateTime;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -143,7 +246,7 @@ public class Student {
     private Address address;
     private List<String> favouriteSubjects;
     private BigDecimal totalSpentInBooks;
-    private ZonedDateTime created;
+    private LocalDateTime created;
 }
 ```
 
@@ -176,7 +279,6 @@ import org.springframework.context.annotation.Bean;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.time.ZonedDateTime;
 import java.util.List;
 
 @SpringBootApplication
@@ -233,9 +335,8 @@ public class Student {
     ...
 ```
 
-- We need to enable the indexing by adding the `spring.data.mongodb.auto-index-creation=true` inside the application.properties
+- We need to enable the indexing by adding the `spring.data.mongodb.auto-index-creation=true` inside the `application.properties`
 
-application.properties
 ```properties
 spring.data.mongodb.authentication-database=admin
 spring.data.mongodb.username=rootuser
@@ -273,7 +374,8 @@ Caused by: com.mongodb.DuplicateKeyException: Write failed with error code 11000
 
 - Finding Student by email using MongoDB Core's `Query`
 
-SpringBootMongodbApplication.java
+`SpringBootMongodbApplication.java`
+
 ``` java
             Query query = new Query();
             query.addCriteria(Criteria.where("email").is(email));
@@ -302,7 +404,7 @@ List<Student> students = mongoTemplate.find(query, Student.class);
 
 ### Queries and Method Names
 
-- Defining additional method in the StudentRepository class
+- Defining additional method in the `StudentRepository` class
 ```java
 package com.medinar.practice.springbootmongodb.student;
 
@@ -385,10 +487,6 @@ public class MongoApp {
 }
 ```
 
-### Application Architecture Diagram
-
-![Application-Architecture-Diagram](https://user-images.githubusercontent.com/25921121/141672227-2069aa84-0156-4590-aa77-4d1bd7ad5364.png)
-
 ### Building the API
 
 - Create `StudentController` class
@@ -439,98 +537,30 @@ public class MongoApp {
   }
   ```
 
-- @PostMapping, @PutMapping and @DeleteMapping
- 
-  `StudentController.java`
+  
 
-``` java
-  package com.medinar.practice.springbootmongodb.student;
-  
-  import com.medinar.practice.springbootmongodb.student.exception.BadRequestException;
-  import lombok.AllArgsConstructor;
-  import org.springframework.http.HttpStatus;
-  import org.springframework.http.ResponseEntity;
-  import org.springframework.web.bind.annotation.*;
-  
-  import java.util.List;
-  
-  import static org.springframework.http.HttpStatus.*;
-  
-  @RestController
-  @RequestMapping("api/v1/students")
-  @AllArgsConstructor
-  public class StudentController {
-  
-      private final StudentService studentService;
-  
-      @GetMapping
-      public ResponseEntity<List<Student>> fetchAllStudents() {
-          List<Student> students = studentService.getAllStudents();
-          if (students.isEmpty()) {
-              return new ResponseEntity<>(students, NO_CONTENT);
-          } else {
-              return new ResponseEntity<>(students, OK);
-          }
-      }
-  
-      @PostMapping
-      public ResponseEntity<Student> addStudent(@RequestBody Student student) throws BadRequestException {
-          try {
-              Student _student = studentService.addStudent(student);
-              return new ResponseEntity<>(_student, CREATED);
-          }
-          catch (Exception ex) {
-              return new ResponseEntity<>(null, INTERNAL_SERVER_ERROR);
-          }
-      }
-  
-      @DeleteMapping("/{studentId}")
-      public ResponseEntity<HttpStatus> deleteStudent(@PathVariable String studentId) {
-          try {
-              studentService.deleteStudent(studentId);
-              return new ResponseEntity<>(OK);
-          } catch (Exception ex) {
-              return new ResponseEntity<>(INTERNAL_SERVER_ERROR);
-          }
-      }
-  
-      @PutMapping("/{studentId}")
-      public ResponseEntity<Student> updateStudent(@RequestBody Student student, @PathVariable String studentId) {
-          try {
-              Student _student = studentService.updateStudent(student, studentId);
-              return new ResponseEntity<>(_student, OK);
-          } catch (Exception ex) {
-              return new ResponseEntity<>(null, INTERNAL_SERVER_ERROR);
-          }
-  
-      }
-  
+#### Create Operation
+
+We define a method called `addStudent(@RequestBody Student student)` with `@PostMapping` annotation to handle POST requests from clients. This will invoke the `addStudent(student)` method of `StudentService` and then call the `save(student)` method of the `StudentRepository` class. This will create a new Student entry in the database if the operation is successful.
+
+`StudentController.java`
+
+```java
+@PostMapping
+public ResponseEntity<Student> addStudent(@RequestBody Student student) throws BadRequestException {
+  try {
+    Student _student = studentService.addStudent(student);
+    return new ResponseEntity<>(_student, CREATED);
   }
- ```
- 
+  catch (Exception ex) {
+    return new ResponseEntity<>(null, INTERNAL_SERVER_ERROR);
+  }
+}
+```
+
 `StudentService.java`
- 
-``` java
-package com.medinar.practice.springbootmongodb.student;
 
-import com.medinar.practice.springbootmongodb.student.exception.BadRequestException;
-import com.medinar.practice.springbootmongodb.student.exception.NotFoundException;
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Service;
-
-import java.util.List;
-import java.util.Objects;
-
-@AllArgsConstructor
-@Service
-public class StudentService {
-
-    private final StudentRepository studentRepository;
-
-    public List<Student> getAllStudents() {
-        return studentRepository.findAll();
-    }
-
+```java
     public Student addStudent(Student student) throws BadRequestException {
         Boolean emailExists = studentRepository.existsByEmail(student.getEmail());
         if (emailExists) {
@@ -541,18 +571,61 @@ public class StudentService {
         }
         return studentRepository.insert(student);
     }
+```
 
-    public void deleteStudent(String studentId) throws NotFoundException {
-        if (!studentRepository.existsById(studentId)) {
-            throw new NotFoundException(String.format(
-                    "Student with id %s does not exists",
-                    studentId
-            ));
-        }
-        studentRepository.deleteById(studentId);
+#### Retrieve Operation
+
+We define a method called `fetchAllStudents()` with `@GetMapping` annotation to handle Http Get requests from clients. This will invoke the `getAllStudents()` method of `StudentService` and then call the `findAll()` method of the `StudentRepository` class. This will return all Student entries in the database if the operation is successful.
+
+`StudentController.java`
+
+```java
+      @GetMapping
+      public ResponseEntity<List<Student>> fetchAllStudents() {
+          List<Student> students = studentService.getAllStudents();
+          if (students.isEmpty()) {
+              return new ResponseEntity<>(students, NO_CONTENT);
+          } else {
+              return new ResponseEntity<>(students, OK);
+          }
+      }
+```
+
+`StudentService.java`
+
+```java
+    public List<Student> getAllStudents() {
+        return studentRepository.findAll();
     }
+```
 
-    public Student updateStudent(Student student, String studentId) throws IllegalStateException {
+#### Update Operation
+
+We define a method called `updateStudent(@RequestBody Student student, @PathVariable String studentId)` with `@PutMapping` annotation to handle Http Put requests from clients.
+
+- `updateStudent()` accepts `studentId` and `student` payload as parameters
+- using the `studentId` we retrieve the Student entry from the database
+- the student entry will be updated with the information coming from the payload and then saved to the database
+
+ `StudentController.java`
+
+```java
+      @PutMapping("/{studentId}")
+      public ResponseEntity<Student> updateStudent(@RequestBody Student student, @PathVariable String studentId) {
+          try {
+              Student _student = studentService.updateStudent(student, studentId);
+              return new ResponseEntity<>(_student, OK);
+          } catch (Exception ex) {
+              return new ResponseEntity<>(null, INTERNAL_SERVER_ERROR);
+          }
+  
+      }
+```
+
+`StudentService.java`
+
+```java
+public Student updateStudent(Student student, String studentId) throws IllegalStateException {
         Student _student = studentRepository.findById(studentId)
                 .orElseThrow(() -> new IllegalStateException(
                         String.format("student with id %s does not exists", studentId)
@@ -627,13 +700,49 @@ public class StudentService {
         }
         return studentRepository.save(_student);
     }
-}
-
 ```
 
-### Intellij Generated Requests for Testing
+#### Delete Operation
 
-generated-requests.http
+We define a method called `deleteStudent(@PathVariable String studentId)` with `@DeleteMapping` annotation to handle Http DELETE requests from clients. This will invoke the `deleteStudent(studentId)` method of `StudentService` and then call the `deleteById(studentId)` method of the `StudentRepository` class. If the student with the given `studentId` exists and the delete operation is successful, the Student entry will be removed from the database.
+
+`StudentController.java`
+
+```java
+      @DeleteMapping("/{studentId}")
+      public ResponseEntity<HttpStatus> deleteStudent(@PathVariable String studentId) {
+          try {
+              studentService.deleteStudent(studentId);
+              return new ResponseEntity<>(OK);
+          } catch (Exception ex) {
+              return new ResponseEntity<>(INTERNAL_SERVER_ERROR);
+          }
+      }
+```
+
+`StudentService.java`
+
+```java
+    public void deleteStudent(String studentId) throws NotFoundException {
+        if (!studentRepository.existsById(studentId)) {
+            throw new NotFoundException(String.format(
+                    "Student with id %s does not exists",
+                    studentId
+            ));
+        }
+        studentRepository.deleteById(studentId);
+    }
+```
+
+## Testing
+
+### Using the Intellij Generated Requests
+
+By clicking on the globe icon beside each of the maaping annotations a test file which contains the http requests will be generated. 
+
+![Intellij Generated Http Request](https://user-images.githubusercontent.com/25921121/142082166-953e7835-4e3d-4cb8-add5-c9cc7422a237.png)
+
+Below is the sample file generated`generated-requests.http`:
 
 ```
 ###
@@ -690,5 +799,18 @@ Content-Type: application/json
 
 ```
 
- 
+### Using an API Client such as Postman
 
+## License
+
+Distributed under the MIT License. See LICENSE.txt for more information.
+
+## Contact
+
+Rommel Medina - rommel.d.medina@gmail.com
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc.
